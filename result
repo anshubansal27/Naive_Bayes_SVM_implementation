@@ -1,0 +1,138 @@
+# python3 naive_bayes.py "ass2_data/train.json" "ass2_data/test.json" a
+
+Training accuracy:  69.48727919950942
+Testing accuracy:  61.44348554420497
+F-score: 
+[ 0.69422833  0.26450413  0.33923445  0.52781382  0.75722326]
+Macro -f -Score : 0.516600799293
+
+
+# python3 naive_bayes.py "ass2_data/train.json" "ass2_data/test.json" b
+
+
+Random Testing Accuracy :  19.87540944375477
+F-score: 
+[ 0.17004942  0.11614272  0.1395033   0.20675966  0.27439781]
+Macro -f -Score : 0.181370580841
+Majority Testing Accuracy :  43.9895900327555
+F-score: 
+[ 0.         0.         0.         0.         0.6110107]
+Macro -f -Score : 0.122202139815
+
+
+# python3 naive_bayes.py "ass2_data/train.json" "ass2_data/test.json" c
+
+
+Training accuracy:  69.48727919950942
+Testing accuracy:  61.44348554420497
+F-score: 
+[ 0.69422833  0.26450413  0.33923445  0.52781382  0.75722326]
+Macro -f -Score : 0.516600799293
+
+
+# python3 naive_bayes.py "ass2_data/train.json" "ass2_data/test.json" d
+
+ Stemmed Data Training : 
+
+Training accuracy:  63.84144243856474
+Testing accuracy:  59.893955937121405
+
+
+# python3 naive_bayes.py "ass2_data/train.json" "ass2_data/test.json" e
+
+ Bigrams Data Training : 
+
+Testing accuracy:  63.91809629219701
+F-score: 
+[ 0.74842006  0.16583773  0.23029951  0.50872989  0.80008431]
+Macro -f -Score : 0.490674298702
+
+ TF-IDF Data Training : 
+
+Testing accuracy:  58.693668765611214
+F-score: 
+[ 0.64302255  0.35597826  0.40383127  0.48744553  0.73652751]
+Macro -f -Score : 0.525361025417
+
+
+
+
+# python3 svm2.py mnist/train.csv mnist/test.csv a
+
+
+b 0.874962480678
+--cvxopt linear 1546.7453303337097 seconds ---
+Correct test cases 1973 96.62095984329089
+
+# python3 svm2.py mnist/train.csv mnist/test.csv b
+Parameter b:  [ 0.00100077]
+---cvxopt gaussian 2768.910334587097 seconds ---
+Correct test cases 1976 96.89666993143977 %
+
+
+# python3 svm2.py mnist/train.csv mnist/test.csv c
+
+
+.............*.......*
+optimization finished, #iter = 20240
+nu = 0.033968
+obj = -84.471943, rho = -1.162471
+nSV = 297, nBSV = 44
+Total nSV = 297
+---LIBSVM Linear 2.0189993381500244 seconds ---
+Accuracy = 97.0127% (1981/2042) (classification)
+Accuracy with linear kernel 97.01273261508325
+b value :  -1.1624707095500089
+---LIBSVM Gaussian 9.476181507110596 seconds ---
+Accuracy = 99.2654% (2027/2042) (classification)
+Accuracy with Gaussian kernel 99.26542605288932
+b value :  -0.18614008430101237
+
+
+# python3 svm2b.py mnist/train.csv mnist/test.csv b
+
+---LIBSVM Gaussian 218.67938089370728 seconds ---
+Accuracy = 99.92% (19984/20000) (classification)
+Accuracy with Gaussian kernel on Training 99.92
+Accuracy = 97.23% (9723/10000) (classification)
+Accuracy with Gaussian kernel on Testing 97.23
+
+
+#  python3 svm2b.py mnist/train.csv mnist/test.csv c
+
+---LIBSVM Gaussian 241.52894949913025 seconds ---
+Accuracy = 99.92% (19984/20000) (classification)
+Accuracy with Gaussian kernel on Training 99.92
+Accuracy = 97.23% (9723/10000) (classification)
+Accuracy with Gaussian kernel on Testing 97.23
+
+
+#  python3 svm2b.py mnist/train.csv mnist/test.csv d
+
+
+Accuracy = 8.35% (167/2000) (classification)
+Accuracy = 9.8% (980/10000) (classification)
+Accuracy = 8.35% (167/2000) (classification)
+Accuracy = 9.8% (980/10000) (classification)
+Accuracy = 97.45% (1949/2000) (classification)
+Accuracy = 97.11% (9711/10000) (classification)
+Accuracy = 97.55% (1951/2000) (classification)
+Accuracy = 97.25% (9725/10000) (classification)
+Accuracy = 97.55% (1951/2000) (classification)
+Accuracy = 97.25% (9725/10000) (classification)
+[8.35, 8.35, 97.45, 97.55, 97.55] [9.8, 9.8, 97.11, 97.25, 97.25]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
